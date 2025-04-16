@@ -1,0 +1,242 @@
+/* Existing CSS */
+
+.Alexcontainer {
+    font-family: "Sarabun", sans-serif;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 1400px;
+    padding: 10px;
+    background-color: #e5e8efe6;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below Alexcontainer */
+}
+
+/* .headerimage {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Cybertruck-Into-The-Wild-Desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.headerimage p {
+    font-size: 5em;
+    color: #ffffff;
+} */
+.headerimage {
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    min-height: 50vh;
+    position: relative; /* Position relative to place the video absolutely */
+    background: rgba(0, 0, 0, 0.5); /* Background color for overlay effect */
+}
+
+.headerimage video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place the video behind the content */
+}
+
+.headerimage p {
+    font-size: 5em;
+    /* color: #ffffff; */
+    z-index: 1; /* Ensure the text is on top of the video */
+    background: linear-gradient(to left, #5796ff,    #c2d6f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+
+
+
+
+.main1 {
+    font-family: "Sarabun", sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.15);
+    background-color: #c2d6f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    /* margin: 110px auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.chat-message {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.chat-message p {
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 60%;
+}
+
+.question {
+    justify-content: flex-start;
+}
+
+.question p {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.response {
+    justify-content: flex-end;
+}
+
+.response p {
+    background-color: #5796ff;
+    color: #fff;
+}
+
+.input[type="text"] {
+    width: 100%;
+    width: 350px; /* Adjust this value as needed */
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: none;
+    background-color: #e8f0fe;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.select-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+select {
+    width: 220px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    text-indent: 10px;
+    background-color: white;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:enabled {
+    background-color: white;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add gap between buttons */
+    margin-bottom: 20px;
+    padding: 10px 20px; /* Adjust as needed */
+    width: auto; /* Adjust if you want a specific width for the buttons */
+
+    font-size: 16px; /* Adjust as needed */
+}
+
+.speak,
+.start {
+    font-family: "Sarabun", sans-serif;
+    background-color: #007bff;
+    color: white; /* Change text color to white */
+    border: none;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 50px; /* Make buttons circular */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.speak:hover,
+.start:hover {
+    background-color: #0056b3;
+}
+
+.speak .fa-icon,
+.start .fa-icon {
+    margin-right: 8px; /* Add gap between icon and text */
+}
+
+.spoken-text {
+    font-family: "Sarabun", sans-serif;
+    margin-top: 10px;
+    font-style: italic;
+    color: #555;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.mainContainer {
+    width: 100%;
+    font-family: "Sarabun", sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow-y: auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    padding: 20px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    flex-wrap: wrap;
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    height: 90vh;
+}
+
+/* New CSS for weather component */

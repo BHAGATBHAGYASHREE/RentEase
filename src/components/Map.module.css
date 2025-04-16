@@ -1,0 +1,59 @@
+.frame {
+    width: 90%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add margin to the bottom for spacing */
+}
+
+.frame h1 {
+    margin-bottom: 30px;
+}
+
+.carData {
+    margin-left: 10px;
+    width: 95%; /* Adjust width to fit properly next to the map */
+    background-color: white; /* Ensure it has a distinct background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    gap: 10px; /* Add gap between the .dis and buttons */
+    margin-top: 10px;
+    width: 30%; /* Ensure buttons align with the width of the map */
+}
+
+.btns button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btns button:hover {
+    background-color: #0056b3;
+}
+
+.dis {
+    font-size: 1.2em;
+    gap: 10px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btns1 {
+    gap: 50px; /* Add gap between the .dis and buttons */
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Ensure buttons align with the width of the map */
+}

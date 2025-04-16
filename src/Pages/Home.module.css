@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
+body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+  }
+  
+.home_head {
+    font-family: "Sarabun", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: url("https://r4.wallpaperflare.com/wallpaper/396/917/215/porsche-porsche-taycan-turbo-blue-car-car-electric-car-hd-wallpaper-1ec8e37e750de53e8deaa201c9febe44.jpg")
+    no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    min-height: 700px; /* Adjust this value as needed */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.home_container {
+    font-family: "Sarabun", sans-serif;
+    display: flex;
+    gap: 1px;
+    justify-content: center;    
+    flex-direction: row; /* Align items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    /* max-height: 1400px; */
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #e5e8efe6; /* Slightly transparent background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input_group {
+    font-family: "Sarabun", sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 13vh;
+    flex: 1; /* Allow items to grow and take up available space */
+    width:  10%; /* Increase the minimum width for smaller screens */
+    padding: 20px; /* Add padding to make the input area more spacious */
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Optional: Add a border for better visual distinction */
+    border-radius: 15px; /* Optional: Add border-radius for rounded corners */
+    
+}
+.input_group2 {
+    height: 13vh;
+    font-family: "Sarabun", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;/* Add some margin for spacing between items */
+    flex: 1; /* Allow items to grow and take up available space */
+    width:  10%; /* Increase the minimum width for smaller screens */
+    max-width: 180px; /* Increase the maximum width to maintain alignment */
+    padding: 20px; /* Add padding to make the input area more spacious */
+    background-color: #ffffff;
+    border: 1px solid #ddd; /* Optional: Add a border for better visual distinction */
+    border-radius: 15px; /* Optional: Add border-radius for rounded corners */
+}
+
+.input_group label {
+    text-align: left;
+    font-family: "Sarabun", sans-serif;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #2d2d2d;
+}
+.input_group2 label {
+    font-size: 1.3em;
+    font-family: "Sarabun", sans-serif;
+    margin-bottom: 5px;
+    color: #2d2d2d;
+}
+::placeholder {
+    font-family: "Sarabun", sans-serif;
+    color: #B2BAC7;
+    border: 0px solid #ccc;
+padding-top: 7px;
+}
+
+.input_field {
+    font-family: "Sarabun", sans-serif;
+    width: 100%;
+    color: #B2BAC7;
+    font-size: 1.3em;
+    border: 0px solid #ccc;
+    padding-top: 8px;
+
+}
+
+
+.calculate_button {
+    margin: 2px;/* Add some margin for spacing between items */
+    gap: 10px;
+    height: 13vh;
+    background-color: #5796FF;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Allow the button to take up available space */
+    max-width: 180px; /* Increase the maximum width to maintain alignment */
+    width:  10%; /* Increase the minimum width for smaller screens */
+    display: flex;
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+.calculate_button h4 {
+    font-family: "Sarabun", sans-serif;
+font-weight: lighter;
+    font-size: 1.2em;
+}
+
+.calculate_button:hover {
+    background-color: #0056b3;
+}
+.mar {
+    font-family: "Sarabun", sans-serif;
+    display: flex;
+    flex-direction: row; /* Ensure items are in a row */
+    overflow: hidden; /* Hide overflow to contain items within the marquee */
+    white-space: nowrap; /* Prevent items from wrapping */
+    background-color: #2d2d2d; /* Background color for the marquee */
+    padding: 10px; /* Adjust padding as needed */
+    height: 100px;
+}
+
+.marh {
+    position: relative; /* Ensure relative positioning for pseudo-element */
+    background-image: linear-gradient(
+        to right,
+        #c2d6f9,
+        #5796ff
+    ); /* Gradient colors */
+    -webkit-background-clip: text; /* Use for Safari */
+    background-clip: text; /* Clip text to gradient */
+    color: transparent; /* Hide original text color */
+    margin-right: 250px; /* Adjust spacing between items */
+    font-size: 5em;
+}
+
+.marh::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -170px; /* Adjust distance of line from text */
+    transform: translateY(-50%);
+    border-radius: 10px;
+    height: 8px; /* Increase thickness of the line */
+    width: 120px; /* Length of the line */
+    background-image: linear-gradient(
+        to left,
+        #5796ff,
+        #c2d6f9
+    ); /* Gradient background color */
+}
+
+.hero_section {
+    color: rgb(
+        15,
+        14,
+        14
+    ); /* Make text white for readability against dark background */
+    text-align: center; /* Center the text horizontally */
+    padding: 100px 0; /* Add some padding above and below the text */
+    margin: 0 auto; /* Center the element horizontally and reset margin */
+    margin-top: -130px; /* Adjust top margin to move the hero section up */
+}
+
+.hero_section h1 {
+    font-size: 3em; /* Adjust font size as needed */
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.hero_section p {
+    font-size: 1.2em; /* Adjust font size as needed */
+    line-height: 1.5; /* Increase line height for better readability */
+}
+.highlight {
+    color: #007bff;
+}
+newdiv {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background: url("https://r4.wallpaperflare.com/wallpaper/396/917/215/porsche-porsche-taycan-turbo-blue-car-car-electric-car-hd-wallpaper-1ec8e37e750de53e8deaa201c9febe44.jpg")
+        no-repeat center center;
+    background-size: cover;
+    padding: 20px;
+    min-height: 700px; /* Adjust this value as needed */
+}

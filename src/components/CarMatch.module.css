@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
+
+.carList {
+    font-family: "Sarabun", sans-serif;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.carListItem {
+    font-family: "Sarabun", sans-serif;
+
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.carListItem img {
+    max-width: 250px; /* Adjust width as needed */
+    margin-right: 20px;
+}
+
+.carListItem1 div {
+    display: flex;
+    flex-direction: row;
+}
+
+.carListItem h2 {
+    font-family: "Sarabun", sans-serif;
+
+    font-size: 1.8em;
+    margin: 0 0 10px 0;
+    color: #5796ff;
+}
+
+.carDetails {
+    font-family: "Sarabun", sans-serif;
+
+    display: flex;
+    gap: 10px; /* Adjust the gap between the details as needed */
+}
+
+.carDetailItem {
+    font-family: "Sarabun", sans-serif;
+
+    margin: 0; /* Remove any default margin from the <p> tags */
+    flex: 1; /* Distribute space evenly */
+}

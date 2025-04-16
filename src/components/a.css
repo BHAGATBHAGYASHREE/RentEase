@@ -1,0 +1,89 @@
+/* src/CarouselComponent.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
+
+.overlayContainer {
+    font-family: "Sarabun", sans-serif;
+    position: relative;
+    top: -70px; /* Adjust this value as needed to create the overlay effect */
+    margin: 0 auto;
+    width: 80%;
+    height: 230px; /* Adjust height if necessary */
+    background-color: #e5e8ef;
+    border-radius: 7px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.15); /* Added highlight shadow */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    overflow: hidden; /* Ensure overflow does not affect layout */
+}
+
+.overlayContainer h2 {
+    position: absolute;
+    top: 20px; /* Adjust top spacing as needed */
+    left: 30px; /* Adjust left spacing as needed */
+    color: #000000; /* Adjust text color if necessary */
+    margin: 0;
+}
+
+.carousel {
+    width: 100%; /* Make carousel take full width of container */
+    text-align: center;
+}
+
+.carousel .carousel-slider {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center cards vertically within slide */
+    gap: 30px;
+    width: 100%; /* Make slide take full width of carousel */
+    height: 200px;
+}
+
+.card {
+    margin-top: 30px;
+    background: #ffffff98;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.15); /* Added highlight shadow */
+    padding: 20px;
+    width: 350px; /* Fixed width for cards */
+    height: 100px; /* Fixed height for cards */
+    display: flex;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in width and height */
+    gap: 10px; /* Space between icon and text */
+}
+
+.card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.cardIcon {
+    flex-shrink: 0; /* Prevent icon from shrinking */
+    color: #007bff; /* Default icon color, change as needed */
+    font-size: 1.5rem; /* Adjust the font size as needed (e.g., 2rem, 3rem) */
+    margin-left: 15px;
+}
+.cardTitle {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin: 0 0 5px 0;
+    margin-left: 10px;
+}
+
+.cardDescription {
+    font-size: 14px;
+    text-align: left;
+}
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

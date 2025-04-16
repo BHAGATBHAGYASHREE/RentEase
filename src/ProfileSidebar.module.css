@@ -1,0 +1,213 @@
+/* ProfileSidebar.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap");
+
+/* html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.sidebar {
+    font-family: "Sarabun", sans-serif;
+    width: 250px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #b5afaf93;
+    min-height: 300px; /* Increased for better content fit */
+    position: relative; /* Allows the sidebar to be positioned in normal document flow */
+    /* Removed margin-left and transform */
+}
+
+.profile {
+    margin-bottom: 20px;
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 10px; /* Reduced margin */
+    text-align: center;
+}
+
+.options {
+    width: 100%;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.navItem {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.navLink {
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #007bff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    background-color: #0758ae;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.signOutButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.2em;
+}
+
+.signOutButton:hover {
+    background-color: #c82333;
+}
+
+.badgesAndLevels {
+    margin: 10px 0;
+}
+
+.badgesSection,
+.levelsSection {
+    margin-bottom: 20px;
+}
+
+.badgesTitle,
+.levelsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Centered titles */
+}
+
+.badgesContainer,
+.levelsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Center items within containers */
+}
+
+.badgeItem,
+.levelItem {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.badgeImage,
+.levelImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.badgeImage,
+.levelImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.badgeName,
+.levelName {
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.navLink,
+.disabledNavLink {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2em;
+
+    cursor: pointer;
+}
+
+.disabledNavLink {
+    color: #888;
+}
+
+.signOutButton,
+.disabledSignOutButton {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.disabledSignOutButton {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.pointsSection {
+    display: flex;
+}
+
+.pointsTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left; /* Centered titles */
+}
+
+.pointsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.pointsImage {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.pointsImage {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.pointsName {
+    font-size: 17px;
+    font-weight: normal;
+}
